@@ -1,6 +1,5 @@
 package com.cityCatTarot.utils;
 
-import com.cityCatTarot.domain.User;
 import com.cityCatTarot.errors.InvalidTokenException;
 import io.jsonwebtoken.Claims;
 import org.junit.jupiter.api.BeforeEach;
