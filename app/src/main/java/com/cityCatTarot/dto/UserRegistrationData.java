@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+
 /**
  * 회원 생성 요청 정보.
  */
@@ -14,15 +16,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRegistrationData {
-//    @NotBlank
+    @NotBlank
     @Mapping("email")
     private String email;
 
-//    @NotBlank
+    @NotBlank
     @Mapping("nickName")
     private String nickName;
 
-//    @NotBlank
+    @NotBlank
     @Mapping("password")
     private String password;
 }
