@@ -44,9 +44,9 @@ class CardControllerTest {
 
     private final List<Card> cards = new ArrayList<>();
 
-    private final int EXISTING_CARD_ID_1 = 1;
-    private final int EXISTING_CARD_ID_2 = 2;
-    private final int NOT_EXISTING_ID = 999;
+    private final Long EXISTING_CARD_ID_1 = 1L;
+    private final Long EXISTING_CARD_ID_2 = 2L;
+    private final Long NOT_EXISTING_ID = 999L;
     private final String EXISTING_CARD_CATEGORY = "todayTarot";
     private final String IMAGE_URL = "url";
     private final String CARD_TITLE_1 = "마법사";

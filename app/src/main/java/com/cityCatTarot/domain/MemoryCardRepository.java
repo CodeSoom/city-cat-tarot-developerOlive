@@ -22,7 +22,7 @@ public class MemoryCardRepository implements CardRepository {
     }
 
     @Override
-    public Optional<Card> findById(int cardId) {
+    public Optional<Card> findById(Long cardId) {
         Card card = entityManager.find(Card.class, cardId);
         return Optional.ofNullable(card);
     }

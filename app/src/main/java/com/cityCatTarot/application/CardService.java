@@ -39,7 +39,7 @@ public class CardService {
      * @return 전달된 식별자에 해당하는 카드
      * @throws CardNotFoundException 식별자에 해당하는 카드를 찾을 수 없는 경우
      */
-    public Card getCard(int cardId) {
+    public Card getCard(Long cardId) {
         return cardRepository.findById(cardId)
                 .orElseThrow(() -> new CardNotFoundException(cardId));
     }

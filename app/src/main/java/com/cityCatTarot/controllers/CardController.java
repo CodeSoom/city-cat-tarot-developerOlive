@@ -41,7 +41,7 @@ public class CardController {
      */
     @GetMapping(path = "/{cardCategory}/{cardId}", produces = "application/json; charset=UTF8")
     public Card detail(@PathVariable (name = "cardCategory") String cardCategory,
-                       @PathVariable (name = "cardId") int cardId) {
+                       @PathVariable (name = "cardId") Long cardId) {
 
         return cardService.getCard(cardId);
     }

@@ -8,5 +8,5 @@ import java.util.Optional;
  */
 public interface CardRepository {
     List<Card> findAll();
-    Optional<Card> findById(int cardId);
+    Optional<Card> findById(Long cardId);
 }

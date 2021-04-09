@@ -25,7 +25,7 @@ public class Card {
 
     @Id
     @Column(name = "card_id")
-    private Integer cardId;
+    private Long cardId;
 
     @Column(name = "card_category")
     private String cardCategory;

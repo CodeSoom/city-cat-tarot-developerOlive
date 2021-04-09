@@ -26,9 +26,9 @@ class CardServiceTest {
 
     private final List<Card> cards = new ArrayList<>();
 
-    private final int EXISTING_CARD_ID_1 = 1;
-    private final int EXISTING_CARD_ID_2 = 2;
-    private final int NOT_EXISTING_ID = 999;
+    private final Long EXISTING_CARD_ID_1 = 1L;
+    private final Long EXISTING_CARD_ID_2 = 2L;
+    private final Long NOT_EXISTING_ID = 999L;
     private final String EXISTING_CARD_CATEGORY = "todayTarot";
     private final String NOT_EXISTING_CARD_CATEGORY = "notCategory";
     private final String IMAGE_URL = "url";
