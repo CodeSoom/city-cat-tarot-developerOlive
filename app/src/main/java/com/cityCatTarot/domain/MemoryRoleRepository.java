@@ -16,9 +16,9 @@ public class MemoryRoleRepository implements RoleRepository {
 
     @Override
     public List<Role> findAllByUserId(Long id) {
-        return entityManager.createQuery("select r from Role r where u.id = :user_id",
+        return entityManager.createQuery("select r from Role r where r.id = :id",
                 Role.class)
-                .setParameter("user_id", id)
+                .setParameter("id", id)
                 .getResultList();
     }
 
