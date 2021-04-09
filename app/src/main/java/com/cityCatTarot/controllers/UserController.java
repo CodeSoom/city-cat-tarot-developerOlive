@@ -66,14 +66,17 @@ public class UserController {
      * @return 수정된 회원
      */
     @PatchMapping(value = "patch-userInfo/{id}", produces = "application/json; charset=UTF8")
-    @PreAuthorize("isAuthenticated() and hasAuthority('USER')")
+    @PreAuthorize("isAuthenticated()")
     UserResultData update(
             @PathVariable Long id,
             @RequestBody @Valid UserModificationData modificationData,
             UserAuthentication authentication
     ) throws AccessDeniedException {
+
         Long userId = authentication.getUserId();
+
         User user = userService.updateUser(id, modificationData, userId);
+
         return getUserResultData(user);
     }
 
@@ -83,7 +86,7 @@ public class UserController {
      * @param id 회원 식별자
      */
     @DeleteMapping(value= "delete-user/{id}", produces = "application/json; charset=UTF8")
-    @PreAuthorize("isAuthenticated() and hasAuthority('USER')")
+    @PreAuthorize("isAuthenticated()")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void destroy(@PathVariable Long id) {
         userService.deleteUser(id);
