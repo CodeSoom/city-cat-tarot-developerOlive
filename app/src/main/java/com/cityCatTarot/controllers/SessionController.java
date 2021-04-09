@@ -44,8 +44,11 @@ public class SessionController {
         try {
             String accessToken = authenticationService.login(email, password);
 
+            Long userId = authenticationService.parseToken(accessToken);
+
             return SessionResponseData.builder()
                     .accessToken(accessToken)
+                    .userId(userId)
                     .build();
 
         } catch (LoginFailException e) {
