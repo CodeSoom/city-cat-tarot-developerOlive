@@ -14,8 +14,13 @@
 
 ---
 
-## 🎈 구성
+## 🎈 핵심 기능
 
+- 오늘의 운세 타로를 볼 수 있습니다.
+
+- 썸 타로를 볼 수 있습니다.
+
+- 회원가입 시 타로카드 보관함 이용이 가능합니다. 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/67456294/114234161-5c366400-99b9-11eb-95f0-90b032488f4b.gif" alt="factorio thumbnail"/>
@@ -42,4 +47,4 @@
 
 🔥 Backend 기술 스택 및 사용 라이브러리
 
-Java | Spring Boot + gradle | JPA(ORM) | AWS EC2, S3 | Docker | JWT | Spring security | MariaDB | Git | 
+Java | Spring Boot + gradle | JPA(ORM) | AWS EC2, S3 | Docker | JWT | Spring security | MariaDB | Junit5 | Git 
