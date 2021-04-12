@@ -25,7 +25,10 @@ public class MemoryUserRepository implements UserRepository {
 
     @Override
     public Optional<User> findById(Long id) {
-        return Optional.of(entityManager.find(User.class, id));
+
+        return Optional.of(entityManager.createQuery("select u from User u where u.id = :id", User.class)
+                .setParameter("id", id)
+                .getSingleResult());
     }
 
     @Override
@@ -45,7 +48,6 @@ public class MemoryUserRepository implements UserRepository {
         return Optional.of(entityManager.createQuery("select u from User u where u.email = :email", User.class)
                 .setParameter("email", email)
                 .getSingleResult());
-
     }
 
     @Override
@@ -64,6 +66,8 @@ public class MemoryUserRepository implements UserRepository {
 
     @Override
     public void delete(Long id) {
-
+        Query query = entityManager.createQuery("delete from User AS u where u.id = :userId")
+                .setParameter("userId", id);
+        query.executeUpdate();
     }
 }
