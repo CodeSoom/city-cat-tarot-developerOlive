@@ -25,7 +25,7 @@ public class InventoryService {
         this.userRepository = userRepository;
     }
 
-    public Inventory saveCardDetail(Long id, InventorySaveData inventorySaveData,
+    public Inventory saveCardDetail(InventorySaveData inventorySaveData,
                                     Long userId) throws AccessDeniedException {
 
         return inventoryRepository.save(

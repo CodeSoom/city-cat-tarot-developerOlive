@@ -32,17 +32,16 @@ public class InventoryController {
         this.inventoryService = inventoryService;
     }
 
-    @PostMapping(value = "/post-card/{userId}", produces = "application/json; charset=UTF8")
+    @PostMapping(value="/post-card", produces = "application/json; charset=UTF8")
     @PreAuthorize("isAuthenticated()")
     @ResponseStatus(HttpStatus.CREATED)
     InventoryResultData create(
-            @PathVariable Long userId,
             @RequestBody InventorySaveData inventorySaveData,
             UserAuthentication authentication
     ) throws AccessDeniedException {
         Long authenticatedUserId = authentication.getUserId();
 
-        Inventory inventory = inventoryService.saveCardDetail(userId, inventorySaveData, authenticatedUserId);
+        Inventory inventory = inventoryService.saveCardDetail(inventorySaveData, authenticatedUserId);
         return getInventoryData(inventory);
     }
 
