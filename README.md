@@ -35,13 +35,13 @@
 
 ## 🎈 프로젝트 회고
 
-#### 👉🏻👉🏻 [1주차 회고록](https://domean.tistory.com/215)
+#### 👉🏻👉🏻 [1주차 회고록](https://domean.tistory.com/215) (어떤 프로젝트를 기획할 것인가? / AWS와 Docker을 이용한 배포를 먼저 해보자!)
 
 
-#### 👉🏻👉🏻 [2주차 회고록](https://domean.tistory.com/217)
+#### 👉🏻👉🏻 [2주차 회고록](https://domean.tistory.com/217) (타로 카드를 볼 수 있는 메인 기능을 먼저 완성해 보자!) 
 
 
-#### 👉🏻👉🏻 [3주차 회고록](https://domean.tistory.com/219)
+#### 👉🏻👉🏻 [3주차 회고록](https://domean.tistory.com/219) (JWT Token과 Spring Security를 활용한 회원가입, 로그인 기능을 만들어보자!)
 
 ---
 
