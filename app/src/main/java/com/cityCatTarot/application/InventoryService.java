@@ -30,18 +30,11 @@ public class InventoryService {
 
         return inventoryRepository.save(
                 mapper.map(inventorySaveData, Inventory.class));
-
     }
 
     public List<Inventory> findCardListWithUserId(Long userId) {
         return inventoryRepository.findByUserId(userId);
     }
-
-//    public List<Inventory> findCardListWithUserIdAndCardId(Long userId, Long cardId) {
-//        List<Inventory> cardListForDelete = inventoryRepository.findByUserIdAndCardId(userId, cardId);
-//
-//        return cardListForDelete;
-//    }
 
     public void deleteCardDetail(Long inventoryId){
         inventoryRepository.delete(inventoryId);
