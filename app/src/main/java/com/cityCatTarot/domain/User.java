@@ -47,8 +47,22 @@ public class User {
      * @param source 변경할 사용자 정보
      */
     public void changeWith(User source) {
-        nickName = source.nickName;
-        password = source.password;
+
+        if(source.getNickName() != null && source.getPassword() != null){
+            nickName = source.nickName;
+            password = source.password;
+            return;
+        }
+
+        if(source.getNickName() != null){
+            nickName = source.nickName;
+            return;
+        }
+
+        if(source.getPassword() != null){
+            password = source.password;
+            return;
+        }
     }
 
     /**
