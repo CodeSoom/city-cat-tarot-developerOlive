@@ -63,8 +63,13 @@ public class InventoryController {
 
     @GetMapping(value="/get-card/{userId}", produces = "application/json; charset=UTF8")
     @PreAuthorize("isAuthenticated()")
-    public List<Inventory> getCardList(@PathVariable (name = "userId") Long userId) {
-        return inventoryService.findCardListWithUserId(userId);
+    public List<Inventory> getCardList(
+            @PathVariable Long userId,
+            UserAuthentication authentication)
+            throws AccessDeniedException {
+
+        Long authenticatedUserId = authentication.getUserId();
+        return inventoryService.findCardListWithUserId(authenticatedUserId);
     }
 
     @DeleteMapping(value="delete-card/{inventoryId}", produces = "application/json; charset=UTF8")
