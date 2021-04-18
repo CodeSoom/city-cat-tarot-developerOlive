@@ -73,11 +73,6 @@ public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
         if (path.startsWith("/tarotChat")){
             return true;
         }
-
-        String method = request.getMethod();
-        if (method.equals("GET")){
-            return true;
-        }
         return false;
     }
 }
