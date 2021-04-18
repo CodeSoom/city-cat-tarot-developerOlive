@@ -36,6 +36,9 @@
   <img src="https://user-images.githubusercontent.com/67456294/114234235-72442480-99b9-11eb-827e-5d812c601439.gif" alt="factorio thumbnail"/>
 </p> 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/67456294/115147198-cf646800-a094-11eb-9aed-2c1be7eaeb7d.gif" alt="factorio thumbnail"/>
+</p> 
 
 
 ---
