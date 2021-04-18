@@ -29,12 +29,9 @@
 - 회원가입 시 타로카드 보관함 이용이 가능합니다. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/67456294/114234161-5c366400-99b9-11eb-95f0-90b032488f4b.gif" alt="factorio thumbnail"/>
+  <img src="https://user-images.githubusercontent.com/67456294/115147289-4d287380-a095-11eb-881c-185a282117aa.gif" alt="factorio thumbnail"/>
 </p> 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/67456294/114234235-72442480-99b9-11eb-827e-5d812c601439.gif" alt="factorio thumbnail"/>
-</p> 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/67456294/115147198-cf646800-a094-11eb-9aed-2c1be7eaeb7d.gif" alt="factorio thumbnail"/>
