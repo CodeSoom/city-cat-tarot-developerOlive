@@ -45,6 +45,12 @@ public class UserController {
         return userService.getUsers();
     }
 
+    @GetMapping(value= "/users/{id}", produces = "application/json; charset=UTF8")
+    @PreAuthorize("isAuthenticated()")
+    public User userInfo(@PathVariable Long id) {
+        return userService.findUserInfoData(id);
+    }
+
     /**
      * 전달된 회원 정보로 회원을 생성한 뒤, 그 회원을 리턴합니다.
      *
@@ -102,5 +108,10 @@ public class UserController {
                 .email(user.getEmail())
                 .nickName(user.getNickName())
                 .build();
+    }
+
+    @PostMapping(value= "/duplicationCheck", produces = "application/json; charset=UTF8")
+    boolean duplicationCheck(String email){
+        return userService.emailDuplicationCheck(email);
     }
 }

@@ -101,12 +101,24 @@ public class UserService {
      * @param id 회원 식별자
      * @throws UserNotFoundException 회원을 찾을 수 없는 경우
      */
-    private User findUser(Long id) {
+    public User findUser(Long id) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException(id));
     }
 
     public List<User> getUsers() {
         return userRepository.findAll();
+    }
+
+    public User findUserInfoData(Long id){
+        return userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
+    }
+
+    public boolean emailDuplicationCheck(String email){
+        if (userRepository.existsByEmail(email)) {
+            return false;
+        }
+        return true;
     }
 }
