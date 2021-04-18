@@ -1,7 +1,10 @@
 # City Cat Tarot (시티 캣 타로) 
 
 
-## 👉🏻👉🏻 [시티 캣 타로 방문해보기!](http://citycattarotbucket.s3-website.ap-northeast-2.amazonaws.com/)
+# 👉🏻👉🏻 [시티 캣 타로 방문해보기!](http://citycattarot.ga/)
+
+
+###### [접속이 안 될 경우에는 여기를 눌러주세요.](http://citycattarotbucket.s3-website.ap-northeast-2.amazonaws.com)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/67456294/114232673-35772e00-99b7-11eb-9777-16dab6b8ef1f.png" alt="factorio thumbnail"/>
@@ -34,6 +37,7 @@
 </p> 
 
 
+
 ---
 
 ## 🎈 프로젝트 회고
@@ -46,8 +50,10 @@
 
 #### 👉🏻👉🏻 [3주차 회고록](https://domean.tistory.com/219) (JWT Token과 Spring Security를 활용한 회원가입, 로그인 기능을 만들어보자!)
 
+#### 👉🏻👉🏻 [4주차 회고록](https://domean.tistory.com/222) (타로카드 보관함 기능을 만들고, 도메인에 연결 시키자!)
+
 ---
 
-🔥 Backend 기술 스택 및 사용 라이브러리
+## 🔥 Backend 기술 스택 및 사용 라이브러리
 
-Java | Spring Boot + gradle | JPA(ORM) | AWS EC2, S3 | Docker | JWT | Spring security | MariaDB | Junit5 | Git 
+Java | Spring Boot + gradle | JPA | AWS EC2, S3 | Docker | JWT | Spring security | MariaDB | Junit5 | Git 
