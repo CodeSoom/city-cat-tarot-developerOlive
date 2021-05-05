@@ -6,6 +6,7 @@
 
 ###### [접속이 안 될 경우에는 여기를 눌러주세요.](http://citycattarotbucket.s3-website.ap-northeast-2.amazonaws.com)
 
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/67456294/114232673-35772e00-99b7-11eb-9777-16dab6b8ef1f.png" alt="factorio thumbnail"/>
 </p> 
@@ -60,3 +61,7 @@
 ## 🔥 Backend 기술 스택 및 사용 라이브러리
 
 Java | Spring Boot + gradle | JPA | AWS EC2, S3 | Docker | JWT | Spring security | MariaDB | Junit5 | Git 
+
+---
+
+### 💻  유튜브 영상 : https://youtu.be/HV-ZBK9upy0
