@@ -1,12 +1,6 @@
 # City Cat Tarot (시티 캣 타로) 
 
 
-# 👉🏻👉🏻 [시티 캣 타로 방문해보기!](http://citycattarot.ga/)
-
-
-###### [접속이 안 될 경우에는 여기를 눌러주세요.](http://citycattarotbucket.s3-website.ap-northeast-2.amazonaws.com)
-
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/67456294/114232673-35772e00-99b7-11eb-9777-16dab6b8ef1f.png" alt="factorio thumbnail"/>
 </p> 
